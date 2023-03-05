@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tp2-ejercicio5</title>
+  </head>
+  <body>
+    <script>
+      while (true) {
+        let dniconv = "";
+        let dni = prompt("Escriba un numero de DNI: ");
+        while (dni.length < 0 || dni.length > 8 || isNaN(dni)) {
+          alert("el DNI ingresado no existe");
+          dni = prompt("Escriba un numero de DNI correctamente: ");
+        }
+        if (dni % 23 == 0) {
+          dniconv = "T";
+        } else if (dni % 23 == 1) {
+          dniconv = "R";
+        } else if (dni % 23 == 2) {
+          dniconv = "W";
+        } else if (dni % 23 == 3) {
+          dniconv = "A";
+        } else if (dni % 23 == 4) {
+          dniconv = "G";
+        } else if (dni % 23 == 5) {
+          dniconv = "M";
+        } else if (dni % 23 == 6) {
+          dniconv = "Y";
+        } else if (dni % 23 == 7) {
+          dniconv = "F";
+        } else if (dni % 23 == 8) {
+          dniconv = "P";
+        } else if (dni % 23 == 9) {
+          dniconv = "D";
+        } else if (dni % 23 == 10) {
+          dniconv = "X";
+        } else if (dni % 23 == 11) {
+          dniconv = "B";
+        } else if (dni % 23 == 12) {
+          dniconv = "N";
+        } else if (dni % 23 == 13) {
+          dniconv = "J";
+        } else if (dni % 23 == 14) {
+          dniconv = "Z";
+        } else if (dni % 23 == 15) {
+          dniconv = "S";
+        } else if (dni % 23 == 16) {
+          dniconv = "Q";
+        } else if (dni % 23 == 17) {
+          dniconv = "V";
+        } else if (dni % 23 == 18) {
+          dniconv = "H";
+        } else if (dni % 23 == 19) {
+          dniconv = "L";
+        } else if (dni % 23 == 20) {
+          dniconv = "C";
+        } else if (dni % 23 == 21) {
+          dniconv = "K";
+        } else if (dni % 23 == 22) {
+          dniconv = "E";
+        } else if (dni === null) {
+          alert("Adios!");
+          break; // Salir del bucle si se presiona "cancelar"
+        }
+        alert("La letra que corresponde a este DNI es la: " + dniconv + ".");
+      }
+    </script>
+  </body>
+</html>

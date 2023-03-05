@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tp2-ejercicio2</title>
+  </head>
+  <body>
+    <script>
+      while (true) {
+        let nota = prompt("Ingrese una nota:");
+        if (nota === null) {
+          alert("Adios!");
+          break; // Salir del bucle si se presiona "cancelar"
+        } else if (3 <= nota && 4 >= nota) {
+          alert("Insuficiente");
+        } else if (5 <= nota && 6 >= nota) {
+          alert("Suficiente");
+        } else if (nota == 7) {
+          alert("Bien");
+        } else if (8 <= nota && 9 >= nota) {
+          alert("Notable");
+        } else if (nota == 10) {
+          alert("Sobresaliente");
+        } else if (0 <= nota && 2 >= nota) {
+          alert("Muy deficiente");
+        } else {
+          alert("Numero erroneo");
+        }
+      }
+    </script>
+  </body>
+</html>
