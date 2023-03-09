@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp2-ejercicio8</title>
+</head>
+<body>
+    <script>
+        let m = prompt("Ingrese la cantidad de columnas: ");
+        let n = prompt("Ingrese la cantidad de filas: ");
+        let k = 0;
+        for(i = 0; n>i; i++){
+            for(j = 0; m>j; j++){
+                document.write(" " + (m*n)-k + " ");
+                k++;
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
