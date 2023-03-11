@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-ej2</title>
+</head>
+<body>
+    <script>
+        let ciudad = prompt("Ingrese el nombre de cada ciudad: ");
+        let ciudades = [];
+        for(i=0; confirm(ciudad) == true; i++){
+            ciudades[i] = ciudad;
+            ciudad = prompt("Ingrese el nombre de cada ciudad: ");
+            if (ciudad === null) {
+              break; // Salir del bucle si se presiona "cancelar"
+          } 
+        }
+        ciudades[i] = ciudad;
+        document.write("Las ciudades ingresadas fueron: " + ciudades + " <br>");
+        document.write("La longitud del arreglo es: " + ciudades.length + " <br>");
+        document.write("El primer item es: " + ciudades[0] + " <br>");
+        document.write("El tercer item es: " + ciudades[2] + " <br>");
+        document.write("El ultimo item es: " + ciudades[i] + " <br>");
+        ciudades.push("Paris");
+        document.write("Mi nuevas ciudades son: " + ciudades + " <br>");
+        document.write("El segundo item es: " + ciudades[1] + " <br>");
+        ciudades.splice(1, 1, "Barcelona");
+        ciudades.pop();
+        document.write("Mi nuevas ciudades son: " + ciudades + " <br>");
+    </script>
+</body>
+</html>

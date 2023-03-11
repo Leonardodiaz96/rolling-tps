@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones-ej2</title>
+</head>
+<body>
+    <script>
+        function letras(cadena) {
+        if ( !(cadena.toUpperCase() === cadena) && !(cadena.toLowerCase() === cadena) ) {
+            return "La cadena " + cadena + " tiene mayusculas y minusculas";
+        } else if (cadena.toUpperCase() === cadena){
+            return "La cadena " + cadena + " tiene todo mayusculas";
+        } else if (cadena.toLowerCase() === cadena){
+            return "La cadena " + cadena + " tiene todo minusculas";
+        }
+        }
+        let cadena = "Hola Rey";
+        let control = letras(cadena);
+        document.write(control);
+    </script>
+</body>
+</html>

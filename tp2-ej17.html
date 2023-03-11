@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp2-ejercicio17</title>
+</head>
+<body>
+    <script>
+        let frase = prompt("Escribe un texto: "); 
+        let vocal = "aeiouAEIOU";//letras que quiero que detecte, en este caso las vocales
+        for (i = 1; i <= frase.length; i++) {
+            if (vocal.indexOf(frase[i]) !== -1) {//me dice dice si en la frase esta alguna de las vocales declaradas anteriormente, si no es asi devuelve el valor -1
+            y = parseInt(i) + 1;
+            alert("La primera vocal se encuentra en la posicion: " + y);
+            break;
+            }
+        }
+    </script>
+</body>
+</html>

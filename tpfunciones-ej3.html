@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones-ej3</title>
+</head>
+<body>
+    <script>
+        let ladomayor = prompt("Ingrese el la longitud del lado mayor");
+        let ladomenor = prompt("Ingrese el la longitud del lado menor");
+        function perimetro(ladomayor, ladomenor){
+            return "El perimetro es " + (2 * parseInt(ladomayor) + 2 * parseInt(ladomenor)) + "."
+        }
+        let prueba = perimetro(ladomayor, ladomenor)
+        document.write(prueba);
+    </script>
+</body>
+</html>

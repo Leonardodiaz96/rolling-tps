@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-ej3</title>
+</head>
+<body>
+    <script>
+        let lanzamientos = [];
+        for(i=0; i<50; i++){
+            let d1 = Math.ceil(6*Math.random());
+            let d2 = Math.ceil(6*Math.random());
+            suma = d1 + d2;
+            lanzamientos[i] = suma;
+        }
+        document.write("Los valores obtenidos de sumar los dos dados fueron: " + lanzamientos);
+    </script>
+</body>
+</html>
